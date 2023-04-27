@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Success</title>
+
+</head>
+<style>
+	body{
+	background-image: url(/static/back.jpg);
+    background-size: cover;
+    }
+	.first-head{
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		padding-left: 533px;
+		font-family: Arial, sans-serif;
+		color: white;
+	}
+	.second-head{
+		font-size: 30px;
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		text-align: center;
+		padding-left: 108px;
+		color: white;
+	}
+	.container {
+		font-weight: 100;
+		max-width: 800px;
+		margin: 0 auto;
+		font-family: Arial, sans-serif;
+		font-size: 20px;
+		line-height: 1.5;
+		color: white;
+		text-align: justify; 
+		padding-left: 450px;;
+	}
+
+	p {			
+		margin-bottom: 20px;
+		padding-left: 120px;
+	}
+	/* .button {
+		  display: inline-block;
+		  background-color:  #1e1f20;
+		  color: white;
+		  padding: 14px 25px;
+		  font-size: 16px;
+		  font-weight: bold;
+		  text-align: center;
+		  text-decoration: none;
+		  border-radius: 30px;
+		  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		  cursor: pointer;
+		  transition: background-color 0.3s ease-in-out;
+		  background-color: #4CAF50;
+
+		} */
+		.button{
+		border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        margin: 4px 2px;
+		text-align: center;
+		  text-decoration: none;
+		  border-radius: 30px;
+		  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        float: right;
+		padding-right: 37px;
+		}
+
+		.button:hover {
+		  background-color:rgb(171, 171, 243);
+		}
+
+</style>
+<body>
+	<h1 class="first-head">What is Kidney Stone ? </h1>
+	<div class="container">	
+	<p>Kidney stones are small mineral deposits that form in the kidneys and can cause severe pain as they move through the urinary tract. They can be caused by dehydration, a high-protein/salt/sugar diet, family history, obesity, and certain medical conditions. Symptoms include severe pain in the side, back, or lower abdomen, painful urination, difficulty passing urine, blood in the urine, and nausea/vomiting. Treatment options depend on the size and location of the stone, and can range from pain medication and fluids for small stones, to surgical procedures such as ESWL, ureteroscopy, or percutaneous nephrolithotomy for larger stones. It's important to seek medical attention if you experience symptoms of kidney stones to prevent complications such as infection and kidney damage.</p>
+	
+	<h1 class="second-head">About this Project</h1>
+	<p>In this project, we have successfully built an ML model using three different algorithms: KNN, SVM, and VGG16. The goal of this project was to classify whether an input image contains a kidney stone or not. We evaluated the performance of each model by calculating the accuracy, precision, recall, and F1 score. After analyzing the results, we selected the model that performed the best.</p>
+	<p>
+	In the future, this model could be extended to classify different types of kidney stones, which would be beneficial for doctors to determine the best treatment options. Additionally, this model could be integrated into medical imaging systems, allowing for quicker and more accurate diagnoses of kidney stones. Overall, this project demonstrates the potential of ML models to aid in medical diagnoses and improve patient outcomes.
+</p>
+</div>
+
+<a href="{{ url_for('output') }}" class="button">Click here to try</a>
+</body>
+</html>
+
+
+
